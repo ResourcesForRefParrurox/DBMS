@@ -4,20 +4,7 @@ A **Database Management System (DBMS)** is essentially a computerized data-keepi
 
 ## Table of Contents
 
-1. [Introduction to RDBMS](#1-introduction-to-rdbms)
-2. [Relational Database](#2-relational-database)
-3. [Database Design and the E-R Model](#3-database-design-and-the-e-r-model)
-4. [Introduction to SQL](#4-introduction-to-sql)
-5. [Advanced SQL](#5-advanced-sql)
-6. [Formal Relational Query Languages](#6-formal-relational-query-languages)
-7. [Normalization and Normal Forms](#7-normalization-and-normal-forms)
-8. [Storage and File Structure](#8-storage-and-file-structure)
-9. [Indexing and Hashing](#9-indexing-and-hashing)
-10. [Query Processing & Query Optimization](#10-query-processing--query-optimization)
-11. [Transactions and Concurrency Control](#11-transactions-and-concurrency-control)
-12. [Database System Architectures](#12-database-system-architectures)
-13. [Data Warehousing and Mining](#13-data-warehousing-and-mining)
-14. [XML and Advanced Databases](#14-xml-and-advanced-databases)
+---
 
 **Definition**: A DBMS is a collection of interrelated data and a set of programs to access that data.
 
