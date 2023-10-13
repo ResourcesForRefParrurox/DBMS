@@ -82,3 +82,99 @@ A **Database Management System (DBMS)** is essentially a computerized data-keepi
 DBMS plays a vital role in various industries, providing efficient data management and retrieval capabilities, enhancing decision-making processes, and ensuring data security and integrity.
 
 ---
+
+## File System vs. DBMS
+
+### Data Redundancy and Inconsistency
+
+- In a **file system**, different programmers may create files with varying structures and in different programming languages, leading to data duplication and redundancy.
+- This redundancy results in higher storage and access costs, as well as data inconsistency, as changes to data may not be reflected across all relevant files.
+
+### Difficulty in Accessing the Data
+
+- **File systems** are not convenient and efficient for data retrieval, requiring more responsive systems to efficiently access and manage data.
+
+### Data Isolation
+
+- Achieving **data isolation** in a file system can be challenging, as related data may be stored in different file locations, making it harder to maintain data integrity.
+
+### Integrity Problems
+
+- File systems lack built-in mechanisms to enforce **consistency constraints**. For example, ensuring that an account balance should never be zero is easier to implement in software code but not as easily enforced in files.
+- When new constraints are introduced, it can be problematic, especially when these constraints involve data items from different files, compounding the issue.
+
+### Atomicity Problems
+
+- In any system, failures can occur, and data restoration may be necessary. **Atomicity**, the principle of "All or None," is challenging to ensure in a file system.
+- For example, in a fund transfer operation, it's crucial that either both the debit and credit operations occur, or neither occurs. Achieving this level of atomicity is complex in a file system.
+
+### Concurrent Access Anomalies
+
+- **Concurrency** is generally a good thing as it allows multiple users to access data simultaneously. However, in a file system, concurrent access can lead to data inconsistency and anomalies.
+
+### Security Problems
+
+- **Security problems** in file systems encompass issues related to data access, authentication, and authorization. Controlling and managing access to data can be cumbersome and less secure compared to a DBMS.
+
+In summary, a Database Management System (DBMS) is a superior choice over a file system due to its ability to reduce data redundancy, improve data consistency, provide efficient data retrieval, enforce data integrity, ensure atomicity, handle concurrent access, and enhance security measures, making it a more robust solution for managing and accessing data.
+
+---
+
+## Three-Tier Architecture in DBMS
+
+![Alt text](image-1.png)
+
+Three-tier architecture, also known as multi-tier architecture, is a popular design pattern used in Database Management Systems (DBMS) and application development. It divides the system into three interconnected tiers or layers, each with distinct functions. This architecture offers several advantages, including scalability, flexibility, and improved maintainability. The three tiers are as follows:
+
+### 1. **Presentation Tier (User Interface)**
+
+- The **presentation tier**, also known as the **user interface (UI)** tier, is the topmost layer and is where users interact with the system. It is responsible for displaying data to users and capturing their input.
+
+- **Functions**:
+
+  - User interface design, including forms, screens, and reports.
+  - Handling user input and presenting results.
+  - Managing user authentication and authorization.
+
+- **Examples**:
+  - Web browsers, mobile app interfaces, desktop application interfaces.
+
+### 2. **Application Tier (Logic Tier)**
+
+- The **application tier**, also called the **logic tier**, is the middle layer that processes and manages business logic and application functionality. It acts as an intermediary between the presentation tier and the data tier.
+
+- **Functions**:
+
+  - Implementing business logic, algorithms, and application rules.
+  - Handling user requests and interactions.
+  - Communicating with the data tier to retrieve or update data.
+
+- **Examples**:
+  - Application servers, web servers, middleware components, server-side scripts.
+
+### 3. **Data Tier (Database Tier)**
+
+- The **data tier**, also referred to as the **database tier**, is the lowest layer responsible for storing and managing data. It focuses on data storage, retrieval, and database management.
+
+- **Functions**:
+
+  - Storing and organizing data in a database management system (DBMS).
+  - Managing data access, security, and transactions.
+  - Providing data to the application tier upon request.
+
+- **Examples**:
+  - Database management systems such as MySQL, Oracle, Microsoft SQL Server.
+
+### Key Advantages of Three-Tier Architecture:
+
+- **Scalability**: Each tier can be scaled independently to handle increasing loads, improving system performance.
+
+- **Flexibility**: Changes in one tier do not necessarily affect the others, promoting flexibility in system development and maintenance.
+
+- **Security**: Security measures can be implemented at each tier, enhancing data protection and access control.
+
+- **Maintainability**: Separation of concerns makes it easier to maintain and update specific components of the system.
+
+- **Improved Performance**: By distributing processing across tiers, the system can achieve better performance and responsiveness.
+
+Three-tier architecture is widely used in modern application development and is the foundation for building robust and efficient DBMS-based systems. It helps organize code and functionality, enhances system reliability, and facilitates collaboration among developers working on different aspects of a project.
