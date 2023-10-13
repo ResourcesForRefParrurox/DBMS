@@ -2,7 +2,15 @@
 
 A **Database Management System (DBMS)** is essentially a computerized data-keeping system that provides users with facilities to perform various operations on the data and the structure of a database.
 
-## Table of Contents
+# Table of Contents (top)
+
+## Applications of DBMS
+
+## File System vs. DBMS
+
+## Three-Tier Architecture in DBMS
+
+## View of data
 
 ---
 
@@ -178,3 +186,15 @@ Three-tier architecture, also known as multi-tier architecture, is a popular des
 - **Improved Performance**: By distributing processing across tiers, the system can achieve better performance and responsiveness.
 
 Three-tier architecture is widely used in modern application development and is the foundation for building robust and efficient DBMS-based systems. It helps organize code and functionality, enhances system reliability, and facilitates collaboration among developers working on different aspects of a project.
+
+![Alt text](image-2.png)
+![Alt text](image-3.png)
+![Alt text](image-4.png)
+
+---
+
+## View of data
+
+![Alt text](image-5.png)
+
+## [reference vid](https://www.youtube.com/watch?v=I_PrZ1NHZr8&list=PLBlnK6fEyqRiyryTrbKHX1Sh9luYI0dhX&index=6)
