@@ -198,3 +198,53 @@ Three-tier architecture is widely used in modern application development and is 
 ![Alt text](image-5.png)
 
 ## [reference vid](https://www.youtube.com/watch?v=I_PrZ1NHZr8&list=PLBlnK6fEyqRiyryTrbKHX1Sh9luYI0dhX&index=6)
+
+---
+
+## Instances and Schemas in DBMS
+
+### Schemas
+
+- **Schema** refers to the overall design or structure of a database. It represents the blueprint of the database, defining how data is organized and the relationships between data elements.
+
+- In essence, a **database schema** can be thought of as the "variable declaration" or "type definitions" for the database. It specifies the structure, data types, constraints, and rules that will be applied to the data stored in the database.
+
+- Schemas are relatively stable and do not undergo frequent changes. Once established, they provide a stable framework for the database.
+
+**Example**:
+
+```sql
+-- Define a schema for a Student table
+CREATE TABLE Student (
+  Rollno numeric(5),
+  Name char(25),
+  Class char(25)
+);
+```
+
+In this example, the database schema defines the structure of the "Student" table, specifying the data types for each field (Rollno, Name, and Class).
+
+### Instances
+
+- **Instances** are the actual collections of data stored in the database at a particular moment in time. An instance represents the real data that has been added, modified, or deleted within the database.
+
+- Unlike schemas, database instances are subject to frequent changes. As users interact with the database, data values are inserted, updated, or removed, resulting in changes to the instance.
+
+- Think of a database instance as the "value of the variable" that adheres to the schema's structure and rules. It is the dynamic, evolving aspect of the database.
+
+**Example**:
+
+```sql
+-- Database Instance (Student table)
+| Rollno | Name         | Class      |
+|-------|--------------|------------|
+| 101   | John Smith   | Biology    |
+| 102   | Sarah Brown  | Chemistry  |
+| 103   | Michael Lee  | Physics    |
+```
+
+In this example, the database instance represents the current data within the "Student" table, which may change as new students are added or existing ones are updated or removed.
+
+In summary, database schemas define the structure and rules for a database, serving as a blueprint for data organization, while instances represent the actual data stored in the database, subject to frequent changes and updates. The clear separation between schemas and instances is fundamental in database management, ensuring data consistency and integrity while allowing flexibility in data manipulation.
+
+![Alt text](image-6.png)
